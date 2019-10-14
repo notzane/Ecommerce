@@ -20,7 +20,7 @@
 </html>
 <?php
     $db = pg_connect("host=ec2-54-163-255-1.compute-1.amazonaws.com port=5432 dbname=postgres user=d78258r6re094d password=ac7f8466905190ad89da55ed63559f6b09331b96164ac16cfcd27ea02af30536");
-    echo "<script type='text/javascript'>alert('$db');</script>";
+    echo "<script type='text/javascript'>alert('$_POST[first]');</script>";
     $query = "INSERT INTO user_database VALUES (
         '$_POST[first]',
         '$_POST[last]',
