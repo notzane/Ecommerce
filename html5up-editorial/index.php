@@ -29,5 +29,6 @@
         '$_POST[zip]',
         '$_POST[password]',
         '$_POST[email]')";
-    $result = pg_query($query); 
+    $result = pg_query($db, $query);
+    echo $result
 ?>
