@@ -30,5 +30,5 @@
         '$_POST[password]',
         '$_POST[email]')";
     $result = pg_query($db, $query);
-    echo $result
+    echo $result;
 ?>
